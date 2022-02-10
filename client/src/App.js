@@ -22,7 +22,7 @@ const App = () => {
 	const fetchTodos = async () => {
 		// TODO: Fetch data from API
 		try {
-			const res = await axios.get("http://localhost:4000/api/v1/todos");
+			const res = await axios.get("/api/v1/todos");
 			const resTodos = res.data.data.todos;
 			setTodos(resTodos);
 		} catch (error) {
@@ -33,7 +33,7 @@ const App = () => {
 	const editTodo = async (id, newContent) => {
 		// TODO: Send data to API
 		try {
-			await axios.patch(`http://localhost:4000/api/v1/todos/${id}`, {
+			await axios.patch(`/api/v1/todos/${id}`, {
 				content: newContent,
 			});
 
@@ -58,7 +58,7 @@ const App = () => {
 	const deleteTodo = async (id) => {
 		// TODO: Remove data from API
 		try {
-			await axios.delete(`http://localhost:4000/api/v1/todos/${id}`);
+			await axios.delete(`/api/v1/todos/${id}`);
 
 			setTodos((prevState) => {
 				const currentTodos = prevState;
@@ -96,6 +96,10 @@ const App = () => {
 			<div className="absolute bottom-0 inset-x-0">
 				<img src={waves} alt="waves" />
 				<span className="w-full h-[35vh] bg-white block"></span>
+			</div>
+			{/* firefox */}
+			<div className="absolute bottom-0 inset-x-0">
+				<span className="w-full h-[36vh] bg-white block"></span>
 			</div>
 		</div>
 	);

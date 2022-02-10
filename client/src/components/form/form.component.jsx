@@ -17,7 +17,7 @@ const Form = ({ onAddTodo, items }) => {
 
 		// TODO: Send data to API
 		try {
-			await axios.post("http://localhost:4000/api/v1/todos", { content: todo });
+			await axios.post("/api/v1/todos", { content: todo });
 		} catch (error) {
 			console.log(error);
 		}
