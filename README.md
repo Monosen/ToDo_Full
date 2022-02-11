@@ -4,7 +4,7 @@ A simple ToDo App created with React Js, Node js and Express js
 
 ## Screenshots
 
-![Screenshot](./frontend/public/todo-screenshot.png)
+![Screenshot](./client/public/todo-screenshot.png)
 
 ## Usage
 
