@@ -1,4 +1,4 @@
-# Weather App Project
+# ToDo Full Project
 
 A simple ToDo App created with React Js, Node js and Express js
 
@@ -38,6 +38,19 @@ cd frontend
 
 ```shell
 npm install
+```
+
+### Next, create and configure .env:
+
+```shell
+NODE_ENV= development || production
+PORT=
+
+DB_HOST=
+DB_USERNAME=
+DB_PASSWORD=
+DB=
+DB_PORT=
 ```
 
 #### Finally, start the server with the following command:
